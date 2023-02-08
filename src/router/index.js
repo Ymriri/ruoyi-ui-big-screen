@@ -79,7 +79,19 @@ export const constantRoutes = [
         name: 'Index',
         meta: { title: '首页', icon: 'dashboard', affix: true }
       },
-
+    ]
+  },
+  {
+    path: '',
+    component: Layout,
+    redirect: 'health',
+    children: [
+      {
+        path: 'health',
+        component: () => import('@/views/health/health.vue'),
+        name: '健康报备',
+        meta: { title: '健康报备'}
+      },
     ]
   },
   {
