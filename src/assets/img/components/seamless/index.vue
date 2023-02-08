@@ -1,14 +1,14 @@
 <!--
  描述: 新闻无缝滚动
- 作者: Jack Chen
- 日期: 2020-04-18
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
-  <div class="wrap-container sn-container"> 
-    <div class="sn-content"> 
-      <div class="sn-title">新闻无缝滚动</div> 
-      <div class="sn-body"> 
+  <div class="wrap-container sn-container">
+    <div class="sn-content">
+      <div class="sn-title">新闻无缝滚动</div>
+      <div class="sn-body">
         <div class="wrap-container">
 
           <div class="table">
@@ -47,9 +47,9 @@
             </vue-seamless-scroll>
           </div>
 
-        </div> 
-      </div> 
-    </div>   
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -85,7 +85,7 @@ export default {
         hot: 158
      }, {
         title: 'B站的后浪，会把爱优腾拍在沙滩上吗?',
-        date: '2020-04-20',
+        date: '2023-02-02',
         hot: 889
      }, {
         title: '华为如何做投资的：先给两亿订单一年上市',
@@ -136,15 +136,15 @@ export default {
         waitTime: 1000 // 单步运动停止的时间(默认值1000ms)
       }
     }
-  },  
+  },
   mounted() {
-    
+
   },
   methods: {
-    
+
   },
   beforeDestroy() {
-    
+
   }
 };
 </script>

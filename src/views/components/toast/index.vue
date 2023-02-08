@@ -1,12 +1,12 @@
 <!--
  描述: 消息提示框模板
- 作者: Jack Chen
- 日期: 2020-04-18
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
   <transition name="fade">
-    <div class="toast-container" v-if="visible">  
+    <div class="toast-container" v-if="visible">
       <div class="toast" :class="type">
         <div class="content">
           <i class="iconfont" :class="'icon-' + type"></i>
@@ -17,24 +17,24 @@
     </div>
   </transition>
 </template>
- 
+
 <script>
 
 export default {
   name: 'Toast',
   data() {
-    return {  
+    return {
       content: '',
       time: 3000,
       visible: false,
       type: 'error',  //四种类型：info, success, warning, error
-      hasClose: false,     
+      hasClose: false,
     }
   },
   mounted() {
     this.close();
   },
-  methods: {    
+  methods: {
     close () {
       setTimeout(() =>{
         this.visible = false;
@@ -54,13 +54,13 @@ export default {
  }
 
 .toast-container {
-  position: fixed; 
-  top: 0; 
-  right: 0; 
-  bottom: 0; 
-  left: 0;  
-  display: flex; 
-  justify-content: center; 
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
   align-items: center;
   z-index: 99999;
   .toast {
@@ -70,7 +70,7 @@ export default {
     font-size: 16px;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     .content {
       span {
         padding-left: 10px;

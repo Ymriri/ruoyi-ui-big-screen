@@ -1,19 +1,19 @@
 <!--
  描述: 滚动弧形线
- 作者: Jack Chen
- 日期: 2020-04-20
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
-  <div class="wrap-container sn-container"> 
-    <div class="sn-content"> 
-      <div class="sn-title">滚动弧形线</div> 
-      <div class="sn-body"> 
-        <div class="wrap-container"> 
+  <div class="wrap-container sn-container">
+    <div class="sn-content">
+      <div class="sn-title">滚动弧形线</div>
+      <div class="sn-body">
+        <div class="wrap-container">
           <div class="chartsdom" id="chart_arc"></div>
-        </div> 
-      </div> 
-    </div>   
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -39,7 +39,7 @@ export default {
         tooltip: {
           trigger: 'axis',
           showContent: false,
-          axisPointer: { 
+          axisPointer: {
             type: 'shadow',
             shadowStyle: {
               color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
@@ -66,7 +66,7 @@ export default {
           boundaryGap: false,
           axisTick: {
             show: false
-          }, 
+          },
           axisLabel: {
             formatter: '{value} 月'
           },
@@ -134,7 +134,7 @@ export default {
         });
 
         this.number++;
-        
+
         if (this.number > this.data.length) {
           this.number = 0;
         }

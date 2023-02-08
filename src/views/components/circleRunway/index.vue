@@ -1,14 +1,14 @@
 <!--
  描述: 环形跑道图
- 作者: Jack Chen
- 日期: 2020-04-29
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
-  <div class="wrap-container sn-container"> 
-    <div class="sn-content"> 
-      <div class="sn-title">环形跑道图</div> 
-      <div class="sn-body"> 
+  <div class="wrap-container sn-container">
+    <div class="sn-content">
+      <div class="sn-title">环形跑道图</div>
+      <div class="sn-body">
         <div class="wrap-container">
           <div class="chartsdom" id="chart_run"></div>
           <div class="pdt-info" :class="`info${index}`" v-for="(item, index) in arrData" :key="index">
@@ -17,9 +17,9 @@
             <span>{{ item.number }}</span>
             <span>（{{ item.percentage }}%）</span>
           </div>
-        </div> 
-      </div> 
-    </div>   
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -165,7 +165,7 @@ export default {
     },
   },
   beforeDestroy() {
-    
+
   }
 };
 </script>
@@ -180,7 +180,7 @@ export default {
     width: 100%;
     height: 90%;
   }
-  
+
   .pdt-info {
     position: absolute;
     left: 50%;

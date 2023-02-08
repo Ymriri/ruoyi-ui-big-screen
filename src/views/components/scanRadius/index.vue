@@ -1,15 +1,15 @@
 <!--
  描述: 扫描半径图
- 作者: Jack Chen
- 日期: 2020-04-30
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
-  <div class="wrap-container sn-container"> 
-    <div class="sn-content"> 
-      <div class="sn-title">扫描半径图</div> 
-      <div class="sn-body"> 
-        <div class="wrap-container"> 
+  <div class="wrap-container sn-container">
+    <div class="sn-content">
+      <div class="sn-title">扫描半径图</div>
+      <div class="sn-body">
+        <div class="wrap-container">
           <div class="chartsdom" id="chart_scan"></div>
           <div class="box">
             <div class="nodetext text0">
@@ -28,10 +28,10 @@
               <span>移动互联网</span>
             </div>
           </div>
-        </div> 
-      </div> 
+        </div>
+      </div>
 
-    </div>   
+    </div>
   </div>
 </template>
 
@@ -52,71 +52,71 @@ export default {
     getEchart() {
       let myChart = echarts.init(document.getElementById('chart_scan'));
       let arrData = [{
-        value: 3, 
+        value: 3,
         name: '区块链',
         itemStyle: {
           normal: {
             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-              offset: 0, 
+              offset: 0,
               color: '#4284dd'
             },{
-              offset: 1, 
+              offset: 1,
               color: '#0c3371'
             }])
           }
         }
       },{
-        value: 4.5, 
+        value: 4.5,
         name: '人工智能',
         itemStyle: {
           normal: {
             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-              offset: 0, 
+              offset: 0,
               color: '#5253d3'
             },{
-              offset: 1, 
+              offset: 1,
               color: '#072559'
             }])
           }
         }
       },{
-        value: 3, 
+        value: 3,
         name: '大数据',
         itemStyle: {
           normal: {
             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-              offset: 0, 
+              offset: 0,
               color: '#8b5c85'
             },{
-              offset: 1, 
+              offset: 1,
               color: '#183571'
             }])
           }
         }
       },{
-        value: 5.5, 
+        value: 5.5,
         name: '云计算',
         itemStyle: {
           normal: {
             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-              offset: 0, 
+              offset: 0,
               color: '#b4734f'
             },{
-              offset: 1, 
+              offset: 1,
               color: '#443e5f'
             }])
           }
         }
       },{
-        value: 3, 
+        value: 3,
         name: '移动互联网',
         itemStyle: {
           normal: {
             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-              offset: 0, 
+              offset: 0,
               color: '#3ab1d9'
             },{
-              offset: 1, 
+              offset: 1,
               color: '#124c94'
             }])
           }
@@ -128,8 +128,8 @@ export default {
       }
 
       arrData.push({
-        value: this.val, 
-        name: '__other', 
+        value: this.val,
+        name: '__other',
         itemStyle: {
           normal: {
             color: 'rgba(0, 0, 0, 0)'
@@ -172,7 +172,7 @@ export default {
           }
         },
         tooltip: {
-          trigger: 'item' 
+          trigger: 'item'
         },
         series: [{
           name: '现代技术',
@@ -183,7 +183,7 @@ export default {
           roseType: 'radius',
           z: 0,
           tooltip: {
-            formatter: '{b0}: {c0} ({d0}%)' 
+            formatter: '{b0}: {c0} ({d0}%)'
           },
           label: {
             show: false
@@ -322,7 +322,7 @@ export default {
     }
   },
   beforeDestroy() {
-    
+
   }
 };
 </script>

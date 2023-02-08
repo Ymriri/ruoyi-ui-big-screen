@@ -122,6 +122,10 @@ aside {
 //main-container全局样式
 .app-container {
   padding: 20px;
+  // 设置允许滑动
+  overflow-y: scroll;
+  height: 100vh;
+;
 }
 
 .components-container {

@@ -1,19 +1,19 @@
 <!--
  描述: 动态轮播折线图
- 作者: Jack Chen
- 日期: 2020-04-18
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
-  <div class="wrap-container sn-container"> 
-    <div class="sn-content"> 
-      <div class="sn-title">动态折线图</div> 
-      <div class="sn-body"> 
-        <div class="wrap-container"> 
-          <div class="chartsdom" id="chart_dt"></div> 
-        </div> 
-      </div> 
-    </div>   
+  <div class="wrap-container sn-container">
+    <div class="sn-content">
+      <div class="sn-title">动态折线图</div>
+      <div class="sn-body">
+        <div class="wrap-container">
+          <div class="chartsdom" id="chart_dt"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -28,7 +28,7 @@ export default {
       now: +new Date(2019, 1, 1),
       value: Math.random() * 1000,
       oneDay: 24 * 3600 * 1000
-      
+
     }
   },
   mounted() {
@@ -87,7 +87,7 @@ export default {
           },
           axisTick: {
             show: false
-          }, 
+          },
           axisLine: {
             show: true,
             lineStyle: {
@@ -106,7 +106,7 @@ export default {
           boundaryGap:  false,
           axisTick: {
             show: false
-          }, 
+          },
           axisLine: {
             show: true,
             lineStyle: {

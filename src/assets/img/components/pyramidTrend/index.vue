@@ -1,19 +1,19 @@
 <!--
  描述: 金字塔趋势
- 作者: Jack Chen
- 日期: 2020-04-18
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
-  <div class="wrap-container sn-container"> 
-    <div class="sn-content"> 
-      <div class="sn-title">金字塔趋势</div> 
-      <div class="sn-body"> 
-        <div class="wrap-container"> 
+  <div class="wrap-container sn-container">
+    <div class="sn-content">
+      <div class="sn-title">金字塔趋势</div>
+      <div class="sn-body">
+        <div class="wrap-container">
           <div class="chartsdom" id="chart_ptrend"></div>
-        </div> 
-      </div> 
-    </div>   
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -88,7 +88,7 @@ export default {
             },
             controlStyle: {
               show: false,
-            }, 
+            },
             itemStyle: {
               borderColor: '#004b85',
               borderWidth: 1,
@@ -109,7 +109,7 @@ export default {
                 color: '#01d8ff',
                 borderColor: 'rgba(1, 216, 225, 0.5)',
                 borderWidth: 5
-              } 
+              }
             }
           },
           calculable: true,
@@ -123,12 +123,12 @@ export default {
               interval: 0
             },
             data: ['长沙','湘潭','株洲','岳阳','邵阳','衡阳','益阳','娄底','怀化','湘西','张家界','郴州','常德','永州'],
-            splitLine: { 
-              show: false 
+            splitLine: {
+              show: false
             },
             axisTick: {
               show: false
-            }, 
+            },
             axisLine: {
               show: true,
               lineStyle: {
@@ -144,7 +144,7 @@ export default {
             },
             axisTick: {
               show: false
-            }, 
+            },
             axisLine: {
               show: true,
               lineStyle: {
@@ -153,7 +153,7 @@ export default {
             }
           }],
           series: [{
-            name: '一类', 
+            name: '一类',
             type: 'bar',
             barWidth: 15,
             legendHoverLink: true,
@@ -190,7 +190,7 @@ export default {
     }
   },
   beforeDestroy() {
-    
+
   }
 };
 </script>

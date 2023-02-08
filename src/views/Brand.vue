@@ -1,6 +1,6 @@
 <!--
  描述: 公司品牌介绍
- 作者: Jack Chen
+ 作者: 吴甜
  日期: 2020-05-10
 -->
 
@@ -10,7 +10,7 @@
       <header>
         <div class="weather">
           <img :src="imgSrc">
-          <span class="tem">{{ weatcherData.tem }}°C</span> 
+          <span class="tem">{{ weatcherData.tem }}°C</span>
           <span class="wea">{{ weatcherData.wea }}</span>
         </div>
         <h2>区块链科技公司品牌概览</h2>
@@ -91,9 +91,9 @@
           </div>
         </div>
       </section>
-  
+
     </div>
-    
+
   </div>
 </template>
 
@@ -140,7 +140,7 @@ export default {
   	}
   },
   computed: {
-  	
+
   },
   created() {
   },
@@ -556,7 +556,7 @@ export default {
         }
       }
     }
-    
+
     .mainbox {
       min-width: 1024px;
       max-width: 1920px;
@@ -645,7 +645,7 @@ export default {
             }
           }
         }
-        
+
         %map-style {
           position: absolute;
           top: 50%;
@@ -813,5 +813,5 @@ export default {
   html {
     font-size: 80px !important;
   }
-}	
+}
 </style>

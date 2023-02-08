@@ -1,12 +1,12 @@
 <!--
  描述: 营业收入
- 作者: Jack Chen
- 日期: 2020-05-09
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
-  <div class="income-container"> 
-    <div class="chart" id="chart_left3"></div>  
+  <div class="income-container">
+    <div class="chart" id="chart_left3"></div>
   </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
   name: "income",
   data() {
     return {
-      
+
     }
   },
   mounted() {
@@ -55,7 +55,7 @@ export default {
             },
           },
           formatter: (value) => {
-            return value[0].name + '年营业收入：<br>' + value[0].value + '万元'; 
+            return value[0].name + '年营业收入：<br>' + value[0].value + '万元';
           }
         },
         grid: {
@@ -171,7 +171,7 @@ export default {
     },
   },
   beforeDestroy() {
-    
+
   }
 };
 </script>

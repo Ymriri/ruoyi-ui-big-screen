@@ -1,7 +1,7 @@
 <!--
  描述: 自定义全局模态框
- 作者: Jack Chen
- 日期: 2020-04-18
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
@@ -27,7 +27,7 @@
     </div>
   </transition>
 </template>
- 
+
 <script>
 
 export default {
@@ -70,7 +70,7 @@ export default {
       console.log(curVal)
     }
   },
-  methods: { 
+  methods: {
     // 关闭按钮事件
     close() {
       this.$emit('update:visible', false);
@@ -79,7 +79,7 @@ export default {
     confirm() {
       this.close();
       this.$emit('confirm');
-    }   
+    }
   }
 }
 </script>
@@ -93,32 +93,32 @@ export default {
   opacity: 0;
 }
 
-.modal-backdrop { 
-  position: fixed; 
-  top: 0; 
-  right: 0; 
-  bottom: 0; 
-  left: 0; 
-  background-color: rgba(0,0,0,.5); 
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
   width: 100%;
   height: 100%;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 99999;
   .modal {
-    position: relative; 
-    background-color: #fff; 
-    box-shadow: 2px 2px 20px 1px; 
+    position: relative;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px 1px;
     overflow-x: auto;
     border-radius: 16px;
     width: 400px;
-  } 
-  .modal-header { 
+  }
+  .modal-header {
     position: relative;
-    border-bottom: 1px solid #eee; 
-    color: #313131; 
-    padding: 20px; 
+    border-bottom: 1px solid #eee;
+    color: #313131;
+    padding: 20px;
     font-size: 20px;
     text-align: center;
     .close {
@@ -127,12 +127,12 @@ export default {
       cursor: pointer;
       color: #909399;
       font-size: 18px;
-    } 
-  } 
+    }
+  }
   .modal-footer {
     padding: 10px 20px 20px;
     text-align: right;
-    .btn-close, .btn-confirm {    
+    .btn-close, .btn-confirm {
         border-radius: 8px;
         cursor: pointer;
         border: none;
@@ -146,22 +146,22 @@ export default {
         border: 1px solid #dcdfe6;
         margin-right: 20px;
         &:hover {
-          color: #409eff; 
+          color: #409eff;
           background-color: #ecf5ff;
         }
     }
     .btn-confirm {
-        color: #fff; 
+        color: #fff;
         background-color: #409eff;
         border-color: #409eff;
         &:hover {
           background-color: #66b1ff;
         }
     }
-  } 
-  .modal-body { 
-    position: relative; 
-    padding: 30px 20px; 
+  }
+  .modal-body {
+    position: relative;
+    padding: 30px 20px;
     font-size: 16px;
     line-height: 22px;
   }

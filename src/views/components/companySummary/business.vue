@@ -1,12 +1,12 @@
 <!--
  描述: 业务范围
- 作者: Jack Chen
- 日期: 2020-05-09
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
-  <div class="business-container"> 
-    <div class="chart" id="chart_left1"></div>   
+  <div class="business-container">
+    <div class="chart" id="chart_left1"></div>
   </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
   name: "business",
   data() {
     return {
-      
+
     }
   },
   mounted() {
@@ -63,7 +63,7 @@ export default {
           }
         }
         lineY.push(data)
-      }  
+      }
 
       // 指定配置和数据
       let option = {
@@ -170,7 +170,7 @@ export default {
     },
   },
   beforeDestroy() {
-    
+
   }
 };
 </script>

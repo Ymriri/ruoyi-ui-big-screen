@@ -1,19 +1,19 @@
 <!--
  描述: 仪表盘
- 作者: Jack Chen
- 日期: 2020-05-03
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
-  <div class="wrap-container sn-container"> 
-    <div class="sn-content"> 
-      <div class="sn-title">仪表盘</div> 
-      <div class="sn-body"> 
-        <div class="wrap-container"> 
-          <div class="chartsdom" id="chart_gauge"></div> 
-        </div> 
-      </div> 
-    </div>   
+  <div class="wrap-container sn-container">
+    <div class="sn-content">
+      <div class="sn-title">仪表盘</div>
+      <div class="sn-body">
+        <div class="wrap-container">
+          <div class="chartsdom" id="chart_gauge"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -102,7 +102,7 @@ export default {
               }
             },
             data: [{
-              value: 40, 
+              value: 40,
               name: 'km/h'
             }]
         }]

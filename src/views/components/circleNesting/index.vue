@@ -1,7 +1,7 @@
 <!--
  描述: 圆环套圆环
- 作者: Jack Chen
- 日期: 2020-05-03
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
@@ -187,8 +187,10 @@ export default {
 
 <style lang="scss" scoped>
 .sn-container {
+  //left: 1436px;
+  //top: 2837px;
   left: 1436px;
-  top: 2837px;
+  top: 690px;
   width: 432px;
   height: 400px;
   .defelement {

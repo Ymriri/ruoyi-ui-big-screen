@@ -1,19 +1,19 @@
 <!--
  描述: 多彩雷达
- 作者: Jack Chen
- 日期: 2020-05-02
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
-  <div class="wrap-container sn-container"> 
-    <div class="sn-content"> 
-      <div class="sn-title">多彩雷达</div> 
-      <div class="sn-body"> 
-        <div class="wrap-container"> 
-          <div class="chartsdom" id="chart_radar"></div> 
-        </div> 
-      </div> 
-    </div>   
+  <div class="wrap-container sn-container">
+    <div class="sn-content">
+      <div class="sn-title">多彩雷达</div>
+      <div class="sn-body">
+        <div class="wrap-container">
+          <div class="chartsdom" id="chart_radar"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -23,7 +23,7 @@ export default {
   data() {
     return {
       option: null
-      
+
     }
   },
   mounted() {
@@ -94,10 +94,10 @@ export default {
             itemStyle: {
               normal: {
                 color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                  offset: 0, 
+                  offset: 0,
                   color: '#9c6b4e'
                 },{
-                  offset: 1, 
+                  offset: 1,
                   color: '#2a59ac'
                 }]),
                 lineStyle: {
@@ -112,10 +112,10 @@ export default {
             itemStyle: {
               normal: {
                 color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                  offset: 0, 
+                  offset: 0,
                   color: '#0855ca'
                 },{
-                  offset: 1, 
+                  offset: 1,
                   color: '#36a6c7'
                 }]),
                 lineStyle: {
@@ -135,7 +135,7 @@ export default {
     }
   },
   beforeDestroy() {
-    
+
   }
 };
 </script>

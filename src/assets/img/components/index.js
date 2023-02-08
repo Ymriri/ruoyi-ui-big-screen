@@ -1,7 +1,7 @@
 /*
  * 描述: 封装组件库
- * 作者: Jack Chen
- * 日期: 2020-04-18
+ * 作者: 吴甜
+ * 日期: 2023-02-02
  */
 
 import bgAnimation from './bgAnimation' // 登录界面背景图动画
@@ -70,7 +70,7 @@ const components = {
   wordCloud,
   distribution,
   history,
-  
+
 };
 
 const install = (Vue = {}) => {

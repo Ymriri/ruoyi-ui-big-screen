@@ -1,11 +1,11 @@
 <!--
  描述: 产品热词
- 作者: Jack Chen
- 日期: 2020-05-09
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
-  <div class="word-container"> 
+  <div class="word-container">
     <div class="chart" id="chart_right1"></div>
   </div>
 </template>

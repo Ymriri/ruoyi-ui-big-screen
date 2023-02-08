@@ -1,12 +1,12 @@
 <!--
  描述: 发展历程
- 作者: Jack Chen
- 日期: 2020-05-09
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
   <div class="history-container">
-    <div class="tabs"> 
+    <div class="tabs">
       <ul class="tab-tilte">
         <li v-for="(itemTit, index) in tabTitle" :key="itemTit" @mouseover="handleMouseOver(index)" @mouseout="handleMouseOut(index)" :class="{active: cur == index}">
           {{ itemTit }}
@@ -22,7 +22,7 @@
           </div>
         </div>
       </div>
-    </div>   
+    </div>
   </div>
 </template>
 

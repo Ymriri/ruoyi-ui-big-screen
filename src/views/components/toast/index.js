@@ -1,14 +1,14 @@
 /*
  * 描述: 注册全局消息提示框组件
- * 作者: Jack Chen
- * 日期: 2020-04-18
+ * 作者: 吴甜
+ * 日期: 2023-02-02
  */
 
 import Vue from 'vue'
 import Toast from './index.vue'
-  
+
 const ToastMsg = Vue.extend(Toast)
-  
+
 Toast.install = (options, type) => {
 	if (options === undefined || options === null) {
 		options = {
@@ -22,16 +22,16 @@ Toast.install = (options, type) => {
 			options.type = type
 		}
 	}
-	  
+
 	let instance = new ToastMsg({
 		data: options
 	}).$mount()
-	  
+
 	document.body.appendChild(instance.$el)
-	  
+
 	Vue.nextTick(() => {
 		instance.visible = true
 	})
 }
-  
+
 export default Toast.install

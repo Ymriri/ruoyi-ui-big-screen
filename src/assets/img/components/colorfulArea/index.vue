@@ -1,19 +1,19 @@
 <!--
  描述: 多彩轮播面积
- 作者: Jack Chen
- 日期: 2020-05-03
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
-  <div class="wrap-container sn-container"> 
-    <div class="sn-content"> 
-      <div class="sn-title">多彩轮播面积</div> 
-      <div class="sn-body"> 
-        <div class="wrap-container"> 
+  <div class="wrap-container sn-container">
+    <div class="sn-content">
+      <div class="sn-title">多彩轮播面积</div>
+      <div class="sn-body">
+        <div class="wrap-container">
           <div class="chartsdom" id="chart_cra"></div>
-        </div> 
-      </div> 
-    </div>   
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -92,7 +92,7 @@ export default {
               showPlayBtn: false,
               borderColor: '#122e96',
               itemGap: 20
-            }, 
+            },
             itemStyle: {
               borderColor: '#122e96',
               borderWidth: 5,
@@ -111,12 +111,12 @@ export default {
               },
               controlStyle: {
                 borderColor: '#122e96'
-              }, 
+              },
               itemStyle: {
                 color: '#ef8c2f',
                 borderColor: 'rgba(239, 140, 47, 0.5)',
                 borderWidth: 5
-              } 
+              }
             }
           },
           calculable: true,
@@ -130,8 +130,8 @@ export default {
               interval: 5
             },
             data: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
-            splitLine: { 
-              show: false 
+            splitLine: {
+              show: false
             },
             offset: 10,
             axisTick: {
@@ -143,7 +143,7 @@ export default {
                 color: '#59aec8',
                 width: 3
               }
-            }, 
+            },
             axisLine: {
               show: false,
               lineStyle: {
@@ -158,7 +158,7 @@ export default {
             },
             axisTick: {
               show: false
-            }, 
+            },
             axisLine: {
               show: false,
               lineStyle: {
@@ -167,7 +167,7 @@ export default {
             }
           }],
           series: [{
-            name: '多彩轮播面积', 
+            name: '多彩轮播面积',
             type: 'line',
             markPoint: {
               symbol: 'pin',
@@ -187,7 +187,7 @@ export default {
               borderColor: '#1374e7',
               borderWidth: 10,
               shadowBlur: 10,
-              shadowColor: '#1374e7', 
+              shadowColor: '#1374e7',
               opacity: 0,
             },
             label: {
@@ -255,7 +255,7 @@ export default {
     }
   },
   beforeDestroy() {
-    
+
   }
 };
 </script>

@@ -1,12 +1,12 @@
 <!--
  描述: 人才队伍
- 作者: Jack Chen
- 日期: 2020-05-09
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
-  <div class="talent-container"> 
-    <div class="chart" id="chart_left2"></div>   
+  <div class="talent-container">
+    <div class="chart" id="chart_left2"></div>
   </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
   name: "talent",
   data() {
     return {
-      
+
     }
   },
   mounted() {
@@ -132,7 +132,7 @@ export default {
     },
   },
   beforeDestroy() {
-    
+
   }
 };
 </script>

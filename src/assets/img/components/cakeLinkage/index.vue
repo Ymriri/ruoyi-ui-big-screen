@@ -1,19 +1,19 @@
 <!--
  描述: 柱饼组合联动
- 作者: Jack Chen
- 日期: 2020-04-30
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
-  <div class="wrap-container sn-container"> 
-    <div class="sn-content"> 
-      <div class="sn-title">柱饼组合联动</div> 
-      <div class="sn-body"> 
-        <div class="wrap-container"> 
-          <div class="chartsdom" id="chart_bp"></div> 
-        </div> 
-      </div> 
-    </div>   
+  <div class="wrap-container sn-container">
+    <div class="sn-content">
+      <div class="sn-title">柱饼组合联动</div>
+      <div class="sn-body">
+        <div class="wrap-container">
+          <div class="chartsdom" id="chart_bp"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -129,8 +129,8 @@ export default {
             controlStyle: {
               showPlayBtn: false,
               borderColor: '#01bde6',
-              itemGap: 20  
-            }, 
+              itemGap: 20
+            },
             itemStyle: {
               // color: '#004b85',
               borderColor: '#004b85',
@@ -155,7 +155,7 @@ export default {
                 color: '#01d8ff',
                 borderColor: 'rgba(1, 216, 225, 0.5)',
                 borderWidth: 5
-              } 
+              }
             }
           },
           // tooltip: {
@@ -169,12 +169,12 @@ export default {
           xAxis: [{
             type: 'category',
             data: ['金融类', '政务类', '医疗类', '互联网类'],
-            splitLine: { 
-              show: false 
+            splitLine: {
+              show: false
             },
             axisTick: {
               show: false
-            }, 
+            },
             axisLine: {
               show: true,
               lineStyle: {
@@ -190,7 +190,7 @@ export default {
             },
             axisTick: {
               show: false
-            }, 
+            },
             axisLine: {
               show: true,
               lineStyle: {
@@ -199,7 +199,7 @@ export default {
             },
           }],
           series: [{
-            name: '联盟链', 
+            name: '联盟链',
             type: 'bar',
             barMaxWidth: 15,
             center: ['20%', '65%'],
@@ -233,38 +233,38 @@ export default {
         options: [{
           series: [
             {data: [{
-                name: '金融类', 
+                name: '金融类',
                 value: this.dataMap.dataJR['2016sum'],
                 itemStyle: itemStyleJR
               },{
-                name: '政务类', 
-                value: this.dataMap.dataZW['2016sum'], 
+                name: '政务类',
+                value: this.dataMap.dataZW['2016sum'],
                 itemStyle: itemStyleZW
               },{
-                name: '医疗类', 
-                value: this.dataMap.dataYL['2016sum'], 
+                name: '医疗类',
+                value: this.dataMap.dataYL['2016sum'],
                 itemStyle: itemStyleYL
               },{
-                name: '互联网类', 
-                value: this.dataMap.dataIT['2016sum'], 
+                name: '互联网类',
+                value: this.dataMap.dataIT['2016sum'],
                 itemStyle: itemStyleIT
               }],
             },
             {data: [{
-                name: '金融类', 
-                value: this.dataMap.dataJR['2016sum'], 
+                name: '金融类',
+                value: this.dataMap.dataJR['2016sum'],
                 itemStyle: itemStyleJR
               },{
-                name: '政务类', 
-                value: this.dataMap.dataZW['2016sum'], 
+                name: '政务类',
+                value: this.dataMap.dataZW['2016sum'],
                 itemStyle: itemStyleZW
               },{
-                name: '医疗类', 
-                value: this.dataMap.dataYL['2016sum'], 
+                name: '医疗类',
+                value: this.dataMap.dataYL['2016sum'],
                 itemStyle: itemStyleYL
               },{
-                name: '互联网类', 
-                value: this.dataMap.dataIT['2016sum'], 
+                name: '互联网类',
+                value: this.dataMap.dataIT['2016sum'],
                 itemStyle: itemStyleIT
               }]
             }
@@ -272,38 +272,38 @@ export default {
         },{
           series: [
             {data: [{
-                name: '金融类', 
-                value: this.dataMap.dataJR['2017sum'], 
+                name: '金融类',
+                value: this.dataMap.dataJR['2017sum'],
                 itemStyle: itemStyleJR
               },{
-                name: '政务类', 
-                value: this.dataMap.dataZW['2017sum'], 
+                name: '政务类',
+                value: this.dataMap.dataZW['2017sum'],
                 itemStyle: itemStyleZW
               },{
-                name: '医疗类', 
-                value: this.dataMap.dataYL['2017sum'], 
+                name: '医疗类',
+                value: this.dataMap.dataYL['2017sum'],
                 itemStyle: itemStyleYL
               },{
-                name: '互联网类', 
-                value: this.dataMap.dataIT['2017sum'], 
+                name: '互联网类',
+                value: this.dataMap.dataIT['2017sum'],
                 itemStyle: itemStyleIT
               }],
             },
             {data: [{
-                name: '金融类', 
-                value: this.dataMap.dataJR['2017sum'], 
+                name: '金融类',
+                value: this.dataMap.dataJR['2017sum'],
                 itemStyle: itemStyleJR
               },{
-                name: '政务类', 
-                value: this.dataMap.dataZW['2017sum'], 
+                name: '政务类',
+                value: this.dataMap.dataZW['2017sum'],
                 itemStyle: itemStyleZW
               },{
-                name: '医疗类', 
-                value: this.dataMap.dataYL['2017sum'], 
+                name: '医疗类',
+                value: this.dataMap.dataYL['2017sum'],
                 itemStyle: itemStyleYL
               },{
-                name: '互联网类', 
-                value: this.dataMap.dataIT['2017sum'], 
+                name: '互联网类',
+                value: this.dataMap.dataIT['2017sum'],
                 itemStyle: itemStyleIT
               }]
             }
@@ -311,38 +311,38 @@ export default {
         },{
           series: [
             {data: [{
-                name: '金融类', 
-                value: this.dataMap.dataJR['2018sum'], 
+                name: '金融类',
+                value: this.dataMap.dataJR['2018sum'],
                 itemStyle: itemStyleJR
               },{
-                name: '政务类', 
-                value: this.dataMap.dataZW['2018sum'], 
+                name: '政务类',
+                value: this.dataMap.dataZW['2018sum'],
                 itemStyle: itemStyleZW
               },{
-                name: '医疗类', 
-                value: this.dataMap.dataYL['2018sum'], 
+                name: '医疗类',
+                value: this.dataMap.dataYL['2018sum'],
                 itemStyle: itemStyleYL
               },{
-                name: '互联网类', 
-                value: this.dataMap.dataIT['2018sum'], 
+                name: '互联网类',
+                value: this.dataMap.dataIT['2018sum'],
                 itemStyle: itemStyleIT
               }]
             },
             {data: [{
-                name: '金融类', 
-                value: this.dataMap.dataJR['2018sum'], 
+                name: '金融类',
+                value: this.dataMap.dataJR['2018sum'],
                 itemStyle: itemStyleJR
               },{
-                name: '政务类', 
-                value: this.dataMap.dataZW['2018sum'], 
+                name: '政务类',
+                value: this.dataMap.dataZW['2018sum'],
                 itemStyle: itemStyleZW
               },{
-                name: '医疗类', 
-                value: this.dataMap.dataYL['2018sum'], 
+                name: '医疗类',
+                value: this.dataMap.dataYL['2018sum'],
                 itemStyle: itemStyleYL
               },{
-                name: '互联网类', 
-                value: this.dataMap.dataIT['2018sum'], 
+                name: '互联网类',
+                value: this.dataMap.dataIT['2018sum'],
                 itemStyle: itemStyleIT
               }]
             }
@@ -350,38 +350,38 @@ export default {
         },{
           series: [
             {data: [{
-                name: '金融类', 
-                value: this.dataMap.dataJR['2019sum'], 
+                name: '金融类',
+                value: this.dataMap.dataJR['2019sum'],
                 itemStyle: itemStyleJR
               },{
-                name: '政务类', 
-                value: this.dataMap.dataZW['2019sum'], 
+                name: '政务类',
+                value: this.dataMap.dataZW['2019sum'],
                 itemStyle: itemStyleZW
               },{
-                name: '医疗类', 
-                value: this.dataMap.dataYL['2019sum'], 
+                name: '医疗类',
+                value: this.dataMap.dataYL['2019sum'],
                 itemStyle: itemStyleYL
               },{
-                name: '互联网类', 
-                value: this.dataMap.dataIT['2019sum'], 
+                name: '互联网类',
+                value: this.dataMap.dataIT['2019sum'],
                 itemStyle: itemStyleIT
               }]
             },
             {data: [{
-                name: '金融类', 
-                value: this.dataMap.dataJR['2019sum'], 
+                name: '金融类',
+                value: this.dataMap.dataJR['2019sum'],
                 itemStyle: itemStyleJR
               },{
-                name: '政务类', 
-                value: this.dataMap.dataZW['2019sum'], 
+                name: '政务类',
+                value: this.dataMap.dataZW['2019sum'],
                 itemStyle: itemStyleZW
               },{
-                name: '医疗类', 
-                value: this.dataMap.dataYL['2019sum'], 
+                name: '医疗类',
+                value: this.dataMap.dataYL['2019sum'],
                 itemStyle: itemStyleYL
               },{
-                name: '互联网类', 
-                value: this.dataMap.dataIT['2019sum'], 
+                name: '互联网类',
+                value: this.dataMap.dataIT['2019sum'],
                 itemStyle: itemStyleIT
               }]
             }
@@ -389,38 +389,38 @@ export default {
         },{
           series: [
             {data: [{
-                name: '金融类', 
-                value: this.dataMap.dataJR['2020sum'], 
+                name: '金融类',
+                value: this.dataMap.dataJR['2020sum'],
                 itemStyle: itemStyleJR
               },{
-                name: '政务类', 
-                value: this.dataMap.dataZW['2020sum'], 
+                name: '政务类',
+                value: this.dataMap.dataZW['2020sum'],
                 itemStyle: itemStyleZW
               },{
-                name: '医疗类', 
-                value: this.dataMap.dataYL['2020sum'], 
+                name: '医疗类',
+                value: this.dataMap.dataYL['2020sum'],
                 itemStyle: itemStyleYL
               },{
-                name: '互联网类', 
-                value: this.dataMap.dataIT['2020sum'], 
+                name: '互联网类',
+                value: this.dataMap.dataIT['2020sum'],
                 itemStyle: itemStyleIT
               }]
             },
             {data: [{
-                name: '金融类', 
-                value: this.dataMap.dataJR['2020sum'], 
+                name: '金融类',
+                value: this.dataMap.dataJR['2020sum'],
                 itemStyle: itemStyleJR
               },{
-                name: '政务类', 
-                value: this.dataMap.dataZW['2020sum'], 
+                name: '政务类',
+                value: this.dataMap.dataZW['2020sum'],
                 itemStyle: itemStyleZW
               },{
-                name: '医疗类', 
-                value: this.dataMap.dataYL['2020sum'], 
+                name: '医疗类',
+                value: this.dataMap.dataYL['2020sum'],
                 itemStyle: itemStyleYL
               },{
-                name: '互联网类', 
-                value: this.dataMap.dataIT['2020sum'], 
+                name: '互联网类',
+                value: this.dataMap.dataIT['2020sum'],
                 itemStyle: itemStyleIT
               }]
             }
@@ -436,7 +436,7 @@ export default {
     }
   },
   beforeDestroy() {
-    
+
   }
 };
 </script>

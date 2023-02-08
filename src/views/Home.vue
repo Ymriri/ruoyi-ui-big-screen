@@ -1,7 +1,7 @@
 <!--
  描述: 酷屏首页模板
- 作者: Jack Chen
- 日期: 2020-04-29
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
@@ -12,34 +12,10 @@
       <sinan />
       <seamless />
       <pyramid />
-
+<!--      这里直接使用滚动留言-->
       <scrollArc />
-      <szBar />
-
-      <ringPin />
-      <rotateColorful />
-      <circleRunway />
-      <scanRadius />
-
-      <cakeLinkage />
-      <pyramidTrend />
-      <dynamicLine />
-
       <staffMix />
-      <flashCloud />
-      <ringPie />
-      <colorfulRadar />
-
-      <dynamicList />
-      <bar3d />
-      <colorfulArea />
-
-      <rainbow />
-      <gauge />
-      <waterPolo />
       <circleNesting />
-
-      <div class="divider"></div>
 
     </div>
 
@@ -53,29 +29,6 @@ import sinan from "@/views/components/sinan";
 export default {
   name: 'Home',
   components: {
-    // sinan:()=> import("@/views/components/sinan/index"),
-    // seamless:()=> import("@/views/components/seamless/index"),
-    // pyramid:()=> import("@/views/components/pyramid/index"),
-    // scrollArc:()=> import("@/views/components/scrollArc/index"),
-    // szBar:()=> import("@/views/components/szBar/index"),
-    // ringPin:()=> import("@/views/components/ringPin/index"),
-    // rotateColorful:()=> import("@/views/components/rotateColorful/index"),
-    // circleRunway:()=> import("@/views/components/circleRunway/index"),
-    // scanRadius:()=> import("@/views/components/scanRadius/index"),
-    // cakeLinkage:()=> import("@/views/components/cakeLinkage/index"),
-    // pyramidTrend:()=> import("@/views/components/pyramidTrend/index"),
-    // dynamicLine:()=> import("@/views/components/dynamicLine/index"),
-    // staffMix:()=> import("@/views/components/staffMix/index"),
-    // flashCloud:()=> import("@/views/components/flashCloud/index"),
-    // ringPie:()=> import("@/views/components/ringPie/index"),
-    // colorfulRadar:()=> import("@/views/components/colorfulRadar/index"),
-    // dynamicList:()=> import("@/views/components/dynamicList/index"),
-    // bar3d:()=> import("@/views/components/bar3d/index"),
-    // colorfulArea:()=> import("@/views/components/colorfulArea/index"),
-    // rainbow:()=> import("@/views/components/rainbow/index"),
-    // gauge:()=> import("@/views/components/gauge/index"),
-    // waterPolo:()=> import("@/views/components/waterPolo/index"),
-    // circleNesting:()=> import("@/views/components/circleNesting/index"),
 
   },
   data() {

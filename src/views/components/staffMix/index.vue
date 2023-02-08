@@ -1,7 +1,7 @@
 <!--
  描述: 人员占比
- 作者: Jack Chen
- 日期: 2020-05-02
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
@@ -94,8 +94,10 @@ export default {
 
 <style lang="scss" scoped>
 .sn-container {
-  left: 50px;
-  top: 1978px;
+  //left: 50px;
+  //top: 1978px;
+  left: 974px;
+  top: 690px;
   width: 432px;
   height: 400px;
   .person{

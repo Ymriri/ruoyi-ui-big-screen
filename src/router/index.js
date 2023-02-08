@@ -75,6 +75,7 @@ export const constantRoutes = [
       {
         path: 'index',
         component: () => import('@/views/index'),
+        // component: () => import('@/views/Home'), // 首页直接显示页面
         name: 'Index',
         meta: { title: '首页', icon: 'dashboard', affix: true }
       },

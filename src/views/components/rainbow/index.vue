@@ -1,15 +1,15 @@
 <!--
  描述: 彩虹轨道图
- 作者: Jack Chen
- 日期: 2020-04-18
+ 作者: 吴甜
+ 日期: 2023-02-02
 -->
 
 <template>
-  <div class="wrap-container sn-container"> 
-    <div class="sn-content"> 
-      <div class="sn-title">彩虹轨道</div> 
-      <div class="sn-body"> 
-        <div class="wrap-container"> 
+  <div class="wrap-container sn-container">
+    <div class="sn-content">
+      <div class="sn-title">彩虹轨道</div>
+      <div class="sn-body">
+        <div class="wrap-container">
           <div class="chartsdom" id="chart_rbt"></div>
 
           <div class="preinfo" :class="`preinfo${index}`" v-for="(item, index) in arrData" :key="index">
@@ -21,9 +21,9 @@
             <span></span>
             <span></span>
           </div>
-        </div> 
-      </div> 
-    </div>   
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -252,7 +252,7 @@ export default {
     }
   },
   beforeDestroy() {
-    
+
   }
 };
 </script>
@@ -286,23 +286,23 @@ export default {
       }
     }
     &.preinfo0 {
-      color: rgb(99, 139, 176); 
+      color: rgb(99, 139, 176);
       margin-top: -65px;
     }
     &.preinfo1 {
-      color: rgb(180, 91, 111); 
+      color: rgb(180, 91, 111);
       margin-top: -87px;
     }
     &.preinfo2 {
-      color: rgb(232, 138, 50); 
+      color: rgb(232, 138, 50);
       margin-top: -109px;
     }
     &.preinfo3 {
-      color: rgb(70, 179, 200); 
+      color: rgb(70, 179, 200);
       margin-top: -131px;
     }
     &.preinfo4 {
-      color: rgb(19, 98, 201); 
+      color: rgb(19, 98, 201);
       margin-top: -153px;
     }
   }
@@ -341,8 +341,8 @@ export default {
       }
     }
     &.pre0 {
-      height: 65px; 
-      background-color: rgb(99, 139, 176); 
+      height: 65px;
+      background-color: rgb(99, 139, 176);
       transform: rotate(-62.614deg);
       span {
         &:nth-child(1) {
@@ -354,8 +354,8 @@ export default {
       }
     }
     &.pre1 {
-      height: 87px; 
-      background-color: rgb(180, 91, 111); 
+      height: 87px;
+      background-color: rgb(180, 91, 111);
       transform: rotate(125.593deg);
       span {
         &:nth-child(1) {
@@ -367,8 +367,8 @@ export default {
       }
     }
     &.pre2 {
-      height: 109px; 
-      background-color: rgb(232, 138, 50); 
+      height: 109px;
+      background-color: rgb(232, 138, 50);
       transform: rotate(86.2006deg);
       span {
         &:nth-child(1) {
@@ -380,8 +380,8 @@ export default {
       }
     }
     &.pre3 {
-      height: 131px; 
-      background-color: rgb(70, 179, 200); 
+      height: 131px;
+      background-color: rgb(70, 179, 200);
       transform: rotate(-18.845deg);
       span {
         &:nth-child(1) {
@@ -393,8 +393,8 @@ export default {
       }
     }
     &.pre4 {
-      height: 153px; 
-      background-color: rgb(19, 98, 201); 
+      height: 153px;
+      background-color: rgb(19, 98, 201);
       transform: rotate(149.666deg);
       span {
         &:nth-child(1) {
