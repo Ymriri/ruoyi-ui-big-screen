@@ -12,7 +12,7 @@
 
 ```bash
 # 克隆项目
-git clone https://gitee.com/y_project/RuoYi-Vue
+git clone https://github.com/Ymriri/ruoyi-ui-big-screen.git
 
 # 进入项目目录
 cd ruoyi-ui
@@ -28,6 +28,7 @@ npm run dev
 ```
 
 浏览器访问 http://localhost:80
+大屏页面访问 http://127.0.0.1/bigScreen
 
 ## 发布
 
